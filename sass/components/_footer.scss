@@ -1,7 +1,15 @@
 .footer {
   background: #2f303a;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: calc(60px - 26.6px);
+  
+}
+.footer__container {
+  display: block;
+  
+}
+.footer__contact {
+  // margin-right: 70px;
 }
 .footer__item {
   margin-bottom: 10px;
@@ -37,16 +45,13 @@
   letter-spacing: 0.03em;
   color: var(--basecolor1);
   margin-bottom: 20px;
+
 }
 .footer__address {
   font-style: normal;
 }
-.footer__container {
-  display: flex;
-}
-.footer__contact {
-  margin-right: 70px;
-}
+
+
 .footer__title {
   color: var(--basecolor1);
   font-size: 14px;

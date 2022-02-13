@@ -50,30 +50,35 @@
             </ul>
         </div>
         <button type="button" class="menu_open_btn" data-menu-open>
-            <svg width="40" height="40">
+            <svg width="40px" height="40px">
                 <use href="./images/menu_open_btn.svg"></use>
             </svg>
         </button>
         </div>
+        <!--mob menu-->
         <div class="mob__menu is-hidden" data-menu>
             <div class="container container_mob">
-                <div class="mob__menu-top">
-            <button type="button" class="menu_close_btn" data-menu-close>X</button>
+            <button type="button" class="menu_close_btn" data-menu-close>
+                <svg width="40px" height="40px">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="mob__menu-top">
             <ul class="list header__list-tel">
-                <li class="header__item-tel"><a class="link header__link-tel" href="./index.html">Студия</a></li>
+                <li class="header__item-tel"><a class="link header__link-tel header__link-tel--current" href="./index.html">Студия</a></li>
                 <li class="header__item-tel"><a class="link header__link-tel" href="./portfolio.html">Портфолио</a></li>
                 <li class="header__item-tel"><a class="link header__link-tel" href="/Контакты">Контакты</a></li>   
             </ul> 
         </div>
         <div class="mob__menu-bottom">
             <div class="header-contact-tel">
-                <ul class="list header__list-tel">
-                    <li class="header__item-tel">
+                <ul class="list header-contact-tel__list">
+                    <li class="header-contact-tel__item">
                         <a class="link header__link-contact-tel" href="tel:+380961111111">
                             +38 096 111 11 11
                         </a>
                     </li>
-                    <li class="header__item-tel">
+                    <li class="header-contact-tel__item">
                         <a class="link header__link-contact-mail" href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
@@ -82,23 +87,32 @@
             </div>
             <div class="social_network-tel">
                 <ul class="social_network-tel__list list">
-                    <li class="link social_network-tel__link "> 
-                        <a href=""
+                    <li class="social_network-tel__item"> 
+                        <a
+                        class="link social_network-tel__link " 
+                        href=""
                         target="_blank"
                         rel="noopener norefferer"
                         >Instagram</a></li>
-                    <li class="social_network-tel__link link"><a href=""
+                    <li class="social_network-tel__item"> 
+                        <a 
+                        class="social_network-tel__link link"
+                        href=""
                         target="_blank"
                         rel="noopener norefferer"
                         >Twitter</a></li>
-                    <li class="social_network-tel__link link">
-                        <a href=""
+                    <li class="social_network-tel__item">
+                        <a 
+                        class="social_network-tel__link link"
+                        href=""
                         target="_blank"
                         rel="noopener norefferer"
                         >Facebook</a>
                         </li>
-                    <li class="social_network-tel__link link">
-                        <a href=""
+                    <li class="social_network-tel__item">
+                        <a 
+                        class="social_network-tel__link link"
+                        href=""
                         target="_blank"
                         rel="noopener norefferer"
                         >Linkedin</a></li>
@@ -110,14 +124,14 @@
     </header>
 <main>
 <!--block make order-->
-    <section class="make-order">
+    <section class="make-order section">
         <div class="container container__make-order">
         <h1 class="make-order__title">эффективные решения для вашего бизнеса</h1>
         <button type="button" class="make-order__button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 <!--block features-->
-    <section class="features">
+    <section class="features section">
         <div class="container">
         <ul class="list features__list">
             <li class="features__item">
@@ -152,7 +166,7 @@
         </div>
     </section>
 <!--block our work-->
-    <section class="our-work">
+    <section class="our-work section">
         <div class="container">
         <h2 class="h2-title">Чем мы занимаемся</h2>
        
@@ -182,7 +196,7 @@
         </div>
     </section>
 <!--block our team-->
-     <section class="our-team">
+     <section class="our-team section">
          <div class="container">
          <h2 class="h2-title our-team__title">Наша команда</h2>
          <ul class="list our-team__list">
@@ -417,7 +431,7 @@
 
      <!--section customers-->
 
-     <section class="customers">
+     <section class="customers section">
          <div class="container">
          <h2 class="h2-title customers__title">Постоянные клиенты</h2>
          <ul class="list customers__list">
