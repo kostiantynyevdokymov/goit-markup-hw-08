@@ -1,29 +1,86 @@
+.container__make-order {
+  padding: 0;
+  width: 100%;
+}
 .make-order {
   background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/makeorderbackground.jpg);
+    url(../images/makeorder_bg_tel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/makeorder_bg_tel_x2.jpg)
+  }
+
+  @media screen and (min-width:768px){
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/makeorder_bg_tab.jpg);
+    padding-left: 204px;  
+    padding-right: 204px;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/makeorder_bg_tab_x2.jpg)
+  }
+  }
+  @media screen and (min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/makeorderbackground.jpg);
+    padding-left: 204px;  
+    padding-right: 204px;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/makeorderbackground_x2.jpg)
+  }
+  }
 }
 .make-order__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--basecolor1);
   margin: 0 auto 30px;
   max-width: 700px;
-}
+  
+  @media screen and (min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;}
+  }
+  
 .make-order__button {
   color: var(--basecolor1);
   background: var(--basecolor3hover);
@@ -56,11 +113,4 @@
   background-color: var(--basecolor3hover);
   left: 0;
   bottom: -33px;
-}
-@media (max-width:480px) {
-  .make-order__title {
-    font-size: 26px;
-    line-height: 1.61;
-
-  }
 }

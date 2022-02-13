@@ -13,21 +13,32 @@
   visibility: hidden;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 40px;
-  width: 528px;
+  width: 90vw;
   height: 581px;
+  padding: 40px;
+  position: relative;
+ margin: 0 auto;
+
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
+ 
   background-color: var(--basecolor1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
+ 
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:480px) {
+      width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+      width: 528px;
+    }
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -149,9 +160,12 @@
   position: relative;
   padding-left: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   color: #757575;
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+  }
 }
 .modal__input--textarea {
   min-height: 120px;

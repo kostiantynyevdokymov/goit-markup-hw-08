@@ -1,23 +1,44 @@
 .our-team {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
-  padding-bottom: 94px;
+  
+  @media screen and (min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    
+  }
 }
+
 .our-team__list {
-  display: flex;
-}
+  @media screen and (min-width:768px){
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  @media screen and (min-width:1200px){ 
+    flex-wrap: nowrap;
+  }
+  }
 .our-team__item {
-  width: 270px;
+  
   background: var(--basecolor1);
-  /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
+  
   align-items: center;
+  @media screen and (min-width:768px) {
+    width: 270px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 .our-team__item:first-child {
+  @media screen and (min-width:1200px)
+  {
   margin-left: 0;
+}
 }
 .our-team__card {
   margin: 30px auto;
@@ -25,17 +46,17 @@
 
 .our-team__name {
   margin-top: 30px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
 }
 .our-team__post {
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
 }
 .our-team__title {
+  @media screen and (min-width:1200px) {
   margin-bottom: 50px;
+}
 }
 .our-team__sociallist {
   display: flex;

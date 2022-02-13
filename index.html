@@ -16,10 +16,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
-    <!-- link to homepage-->
+            <div class="container header__container">
+   
          <a class="header__logo link"  href="/"><span class="logocolor">Web</span>studio</a>
-    <!--header nav section-->
+    
         <nav class="header__nav">
              <ul class="list header__list">
                 <li class="header__item"><a class="link header__link current" href="./index.html">Студия</a></li>
@@ -29,7 +29,7 @@
         </nav> 
         <div class="header-contact">
             <ul class="list header__list">
-                <!-- Link to e-mail address -->
+               
                 <li class="header__item">
                     <a class="link header__link-contact" href="mailto:info@devstudio.com">
                         <svg class="header__icon" width="16" height="12">
@@ -38,7 +38,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <!-- Link to phone number  -->
+                
                 <li class="header__item">
                     <a class="link header__link-contact" href="tel:+380961111111">
                         <svg class="header__icon" width="10" height="16">
@@ -49,12 +49,69 @@
                 </li>
             </ul>
         </div>
+        <button type="button" class="menu_open_btn" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/menu_open_btn.svg"></use>
+            </svg>
+        </button>
+        </div>
+        <div class="mob__menu is-hidden" data-menu>
+            <div class="container container_mob">
+                <div class="mob__menu-top">
+            <button type="button" class="menu_close_btn" data-menu-close>X</button>
+            <ul class="list header__list-tel">
+                <li class="header__item-tel"><a class="link header__link-tel" href="./index.html">Студия</a></li>
+                <li class="header__item-tel"><a class="link header__link-tel" href="./portfolio.html">Портфолио</a></li>
+                <li class="header__item-tel"><a class="link header__link-tel" href="/Контакты">Контакты</a></li>   
+            </ul> 
+        </div>
+        <div class="mob__menu-bottom">
+            <div class="header-contact-tel">
+                <ul class="list header__list-tel">
+                    <li class="header__item-tel">
+                        <a class="link header__link-contact-tel" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="header__item-tel">
+                        <a class="link header__link-contact-mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social_network-tel">
+                <ul class="social_network-tel__list list">
+                    <li class="link social_network-tel__link "> 
+                        <a href=""
+                        target="_blank"
+                        rel="noopener norefferer"
+                        >Instagram</a></li>
+                    <li class="social_network-tel__link link"><a href=""
+                        target="_blank"
+                        rel="noopener norefferer"
+                        >Twitter</a></li>
+                    <li class="social_network-tel__link link">
+                        <a href=""
+                        target="_blank"
+                        rel="noopener norefferer"
+                        >Facebook</a>
+                        </li>
+                    <li class="social_network-tel__link link">
+                        <a href=""
+                        target="_blank"
+                        rel="noopener norefferer"
+                        >Linkedin</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>     
         </div>
     </header>
 <main>
 <!--block make order-->
     <section class="make-order">
-        <div class="container">
+        <div class="container container__make-order">
         <h1 class="make-order__title">эффективные решения для вашего бизнеса</h1>
         <button type="button" class="make-order__button" data-modal-open>Заказать услугу</button>
         </div>
@@ -102,7 +159,9 @@
         <ul class="list our-work__list">
             <li class="our-work__item">
                 <div class="our-work__img">
-                <img src="images/img.jpg" alt="набор кода на клавиатуре" width="370">
+                <img 
+                srcset="./images/img.jpg 1x, ./images/img_2x.jpg 2x"
+                src="./images/img.jpg" alt="набор кода на клавиатуре" width="370">
                 <p class="our-work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 </div>
             </li>
@@ -128,7 +187,22 @@
          <h2 class="h2-title our-team__title">Наша команда</h2>
          <ul class="list our-team__list">
              <li class="our-team__item">
-                 <img src="images/igordemyanenko.jpg" alt="фото игорь Демьяненко" width="270">
+                <picture>
+                    <source
+                    srcset="./images/igordemyanenko.jpg 1x, ./images/igordemyanenko_x2.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="./images/igordemyanenko_tab_1x.jpg 1x, ./images/igordemyanenko_tab_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./images/igordemyanenko_tel_1x.jpg 1x, ./images/igordemyanenko_tel_2x.jpg 2x"
+                    media="(min-width: 480px)"
+                    />
+                    <img 
+                    src="./images/igordemyanenko.jpg" alt="фото игорь Демьяненко">
+                </picture>
                     <div class="our-team__card">
                     <p class="our-team__name">Игорь Демьяненко</p>
                     <p class="our-team__post p-text">Product Designer</p>
@@ -169,7 +243,23 @@
                     </div>
                 </li>
             <li class="our-team__item">
-                <img src="images/olgarepina.jpg" alt="фото Ольга Репина" width="270">
+                <picture>
+                    <source
+                    srcset="./images/olgarepina.jpg 1x, ./images/olgarepina_x2.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="./images/olgarepina_tab_1x.jpg 1x, ./images/olgarepina_tab_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./images/olgarepina_tel_1x.jpg 1x, ./images/olgarepina_tel_2x.jpg 2x"
+                    media="(min-width: 480px)"
+                    />
+                    <img 
+                    src="./images/olgarepina.jpg" alt="фото Ольга Репина">
+                </picture>
+                
                         <div class="our-team__card">
                         <p class="our-team__name">Ольга Репина</p>
                         <p class="our-team__post p-text">Frontend Developer</p>
@@ -210,7 +300,22 @@
                         </div>
             </li>
             <li class="our-team__item">
-                <img src="images/nikolaytarasov.jpg" alt="фото Николай Тарасов" width="270">
+                <picture>
+                    <source
+                    srcset="./images/nikolaytarasov.jpg 1x, ./images/nikolaytarasov_x2.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="./images/nikolaytarasov_tab_1x.jpg 1x, ./images/nikolaytarasov_tab_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./images/nikolaytarasov_tel_1x.jpg 1x, ./images/nikolaytarasov_tel_2x.jpg 2x"
+                    media="(min-width: 480px)"
+                    />
+                    <img 
+                    src="./images/nikolaytarasov.jpg" alt="фото Николай Тарасов">
+                </picture>
                         <div class="our-team__card">
                         <p class="our-team__name">Николай Тарасов</p>
                         <p class="our-team__post p-text">Marketing</p>
@@ -251,7 +356,22 @@
                         </div>
             </li>
             <li class="our-team__item">
-                <img src="images/mihailermakov.jpg" alt="фото Михаил Ермаков" width="270">
+                <picture>
+                    <source
+                    srcset="./images/mihailermakov.jpg 1x, ./images/mihailermakov_x2.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="./images/mihailermakov_tab_1x.jpg 1x, ./images/mihailermakov_tab_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./images/mihailermakov_tel_1x.jpg 1x, ./images/mihailermakov_tel_2x.jpg 2x"
+                    media="(min-width: 480px)"
+                    />
+                    <img 
+                    src="./images/mihailermakov.jpg" alt="фото Михаил Ермаков">
+                </picture>
                         <div class="our-team__card">
                         <p class="our-team__name">Михаил Ермаков</p>
                         <p class="our-team__post p-text">UI Designer</p>
@@ -341,9 +461,9 @@
         </div>
      </section>   
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container footer__container">
-    <!--link to homepage-->
+  
     <div class="footer__contact">
     <a class="footer__logo link"  href="/"><span class="logocolor">Web</span>studio</a>
     <address class="footer__address">
@@ -379,7 +499,7 @@
             </a></li>
         </ul>
     </div>
-    <!-- form email--> 
+
     <form action="#" class="form-email" >
     <div class="form-email__field">    
             <h3 class="form-email__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
@@ -397,7 +517,7 @@
     </div>
     </form>
     </div>
-</footer>
+</footer> -->
 
 <!-- backdrop -->
 
@@ -445,6 +565,8 @@
     </div>
 </div>
 <script src="./js/modal.js">
+</script>
+<script src="./js/menu.js">
 </script>
 </body>
 </html>
