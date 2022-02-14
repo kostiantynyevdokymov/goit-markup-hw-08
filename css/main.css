@@ -519,8 +519,8 @@ body {
   background-color: #ffffff;
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vh;
+  width: 100vw;
+  height: 100vH;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -565,6 +565,10 @@ body {
   margin-bottom: 64px;
 }
 
+.header-contact-tel__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .header__link-tel {
   font-weight: 500;
   font-size: 40px;
@@ -594,10 +598,6 @@ body {
   color: #757575;
 }
 
-.header__item-tel:not(:last-child) {
-  margin-bottom: 32px;
-}
-
 .social_network-tel__link {
   font-weight: 500;
   font-size: 18px;
@@ -613,10 +613,6 @@ body {
 .social_network-tel__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.header-contact-tel {
-  margin-bottom: 64px;
 }
 
 .social_network-tel__list {

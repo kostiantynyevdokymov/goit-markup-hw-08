@@ -106,8 +106,8 @@ display: flex;
   background-color: #ffffff;
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vh;
+  width: 100vw;
+  height: 100vH;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -145,6 +145,9 @@ display: flex;
     fill: var(--basecolor3hover);
   }
 }
+.header__item-tel {
+  
+}
 .header-contact-tel {
   &__list {
     margin-bottom: 64px;
@@ -154,6 +157,8 @@ display: flex;
       margin-bottom: 32px;
   }
 }
+}
+
 .header__link-tel {
 font-weight: 500;
 font-size: 40px;
@@ -186,7 +191,8 @@ font-weight: 500;
 font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
-color: #2196F3;}
+color: #2196F3;
+}
 
 .social_network-tel__item {
 &:not(:first-child){
