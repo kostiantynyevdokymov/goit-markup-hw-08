@@ -5,11 +5,21 @@
   
 }
 .footer__container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:768px) {
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   
 }
 .footer__contact {
-  // margin-right: 70px;
+  margin-bottom: 60px;
+  align-items: center;
+  @media screen and (min-width:1200px){
+  margin-right: 70px;}
 }
 .footer__item {
   margin-bottom: 10px;
