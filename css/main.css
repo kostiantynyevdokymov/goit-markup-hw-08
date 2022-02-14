@@ -1077,6 +1077,8 @@ body {
   .footer__tablet {
     display: flex;
     justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
   }
 }
 
@@ -1085,8 +1087,15 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    margin-right: 165px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__contact {
+    text-align: left;
     margin-right: 70px;
   }
 }
@@ -1094,6 +1103,12 @@ body {
 .footer__join {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    text-align: left;
+  }
 }
 
 .footer__item {
@@ -1136,6 +1151,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
+}
+
 .footer__address {
   font-style: normal;
 }
@@ -1143,9 +1164,15 @@ body {
 .footer__title {
   color: var(--basecolor1);
   font-size: 14px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
 }
 
 .footer__sociallist {
@@ -1182,19 +1209,16 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.form-email__title {
-  margin-bottom: 20px;
-}
-
-.form-email__button {
-  margin-top: 20px;
-}
-
-.form-email {
-  display: block;
+  align-items: center;
   margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-email {
+    display: block;
+    margin: auto;
+  }
 }
 
 .form-email__title {
@@ -1215,10 +1239,11 @@ body {
   text-align: center;
   padding-bottom: 10px;
   color: var(--basecolor1);
+  margin-top: 20px;
 }
 
 .form-email__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1227,8 +1252,17 @@ body {
   padding-left: 16px;
 }
 
-.form-email__field input {
-  margin: 0;
+@media screen and (min-width: 1200px) {
+  .form-email__input {
+    width: 358px;
+  }
+}
+
+.form-email__field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .form-email__icon {
@@ -1260,6 +1294,7 @@ body {
 
 .main__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .main__btn {
@@ -1299,11 +1334,26 @@ body {
 }
 
 .portfolio__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-bottom: 30px;
   background: var(--basecolor1);
   border: 1px solid #eeeeee;
+  margin-left: 60px;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 90px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__card {

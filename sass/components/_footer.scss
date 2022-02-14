@@ -13,22 +13,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  @media screen and (min-width:1200px) {
+    
+  }
 }
 .footer__tablet {
   @media screen and (min-width:768px) {
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+  padding-left: 76px;
+  padding-right: 89px;}
+  @media  screen and (min-width:1200px) {
+  
+  }
 }
 .footer__contact {
   margin-bottom: 60px;
   text-align: center;
+  @media  screen and (min-width:768px) {
+    margin-right: 165px;
+  }
 
   @media screen and (min-width:1200px){
+  text-align: left;
   margin-right: 70px;}
 }
 .footer__join {
   margin-bottom: 60px;
   text-align: center;
+  @media screen and (min-width:1200px) {
+  text-align: left;}
 }
 
 .footer__item {
@@ -66,7 +80,9 @@
   color: var(--basecolor1);
   margin-bottom: 20px;
   text-align: center;
-
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 .footer__address {
   font-style: normal;
@@ -76,9 +92,11 @@
 .footer__title {
   color: var(--basecolor1);
   font-size: 14px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 20px;
+  @media screen and (min-width:1200px) {
+  text-align: left;}
 }
 .footer__sociallist {
   display: flex;
@@ -105,16 +123,4 @@
   height: 20px;
   fill: var(--basecolor1);
 }
-.form-email{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  &__title {
-    margin-bottom: 20px;
-  }
-  &__button {
-    margin-top: 20px;
-  }
 
-}
