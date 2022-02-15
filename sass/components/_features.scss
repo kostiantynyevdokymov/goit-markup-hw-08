@@ -1,5 +1,6 @@
 .features {
   padding-top: 60px;
+  padding-bottom: 0;
   @media screen and (min-width:1200px) {
     padding-top: 94px;
   }
@@ -15,7 +16,9 @@
   }
 } 
 
-
+.features section {
+  margin-bottom: 0;
+}
 .features__item {
   align-items: center;
   margin-bottom: 30px;
