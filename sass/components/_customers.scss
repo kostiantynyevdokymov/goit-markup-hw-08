@@ -24,11 +24,20 @@
    }
 }
 .customers__item {
-  margin-bottom: 30px;
-  margin-right: 30px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  // margin-bottom: 30px;
+  // margin-right: 30px;
   &:hover {
     color: var(--basecolor3hover);
     }
+    @media screen and (min-width: 768px) {
+       width: calc((100% - 6 * 15px) / 3);
+    }
+   
 
 }
 .customers__item:last-child {
