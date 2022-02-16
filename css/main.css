@@ -789,6 +789,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .features__list {
     display: flex;
     flex-wrap: wrap;
