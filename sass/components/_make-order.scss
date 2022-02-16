@@ -64,21 +64,26 @@
   }
 }
 .make-order__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--basecolor1);
-  margin: 0 auto 30px;
-  max-width: 700px;
+     margin: 0 auto;
+		font-weight: 900;
+		letter-spacing: 0.06em;
+ 		text-transform: uppercase;
+ 		text-align: center;
+ 		color: #ffffff;
+	
+	
+		@media screen and (max-width: 1199px) {
+			max-width: 360px;
+			font-size: 26px;
+			line-height: 1.62;
+			text-align: center;
+		}
   
-  @media screen and (min-width:1200px) {
-    font-size: 44px;
-    line-height: 1.36;}
+	 	@media screen and (min-width: 1200px) {
+			max-width: 696px;
+			font-size: 44px;
+			line-height: 1.36;
+		}
   }
   
 .make-order__button {
