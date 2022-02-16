@@ -1,6 +1,5 @@
 .our-team {
-  padding-top: 60px;
-  padding-bottom: 60px;
+ 
   background: #f5f4fa;
   
   @media screen and (min-width:1200px) {
@@ -11,41 +10,33 @@
 }
 
 .our-team__list {
+  margin-bottom: -30px;
   @media screen and (min-width:768px){
   display: flex; 
   flex-wrap: wrap;
-  justify-content: center;
+  margin-left: -30px;
   }
   @media screen and (min-width:1200px){ 
     flex-wrap: nowrap;
   }
   }
 .our-team__item {
-  
+  margin-bottom: 30px;
   background: var(--basecolor1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  
-  align-items: center;
-  
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+ @media screen and (min-width:768px) {
+  width: calc((100% - 60px) / 2);
+  margin-left: 30px;
+  }
+  @media screen and (min-width:1200px) { 
+     width: calc((100% - 120px) / 4);
     }
+
   }
-  @media screen and (min-width:768px) {
-    width: 270px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-}
-.our-team__item:first-child {
-  @media screen and (min-width:1200px)
-  {
-  margin-left: 0;
-}
-}
+ 
+
 .our-team__card {
  padding-top: 30px;
  padding-bottom: 30px;
