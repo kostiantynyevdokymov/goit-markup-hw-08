@@ -934,7 +934,8 @@ body {
 }
 
 .our-team__card {
-  padding: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team__name {
