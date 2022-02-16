@@ -19,10 +19,8 @@
 	
 
 }
-.main__item {
-  margin-left: 8px;
-  border-radius: 4px;
-  cursor: pointer;
+.main__item :not(:last-child) {
+  margin-right: 8px;
 }
 .main__item:first-child {
   margin-left: 0;

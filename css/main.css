@@ -1345,10 +1345,8 @@ body {
   }
 }
 
-.main__item {
-  margin-left: 8px;
-  border-radius: 4px;
-  cursor: pointer;
+.main__item :not(:last-child) {
+  margin-right: 8px;
 }
 
 .main__item:first-child {
@@ -1390,14 +1388,20 @@ body {
 }
 
 .portfolio__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__list {
-    margin-left: -30px;
-    margin-right: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin: 0;
   }
 }
 
