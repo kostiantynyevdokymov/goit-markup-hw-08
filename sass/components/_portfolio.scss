@@ -1,42 +1,43 @@
 .portfolio__list {
   display: block;
 
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-		margin: -15px;
-	}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		margin: 0;
-	}
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 .portfolio__item {
   margin-bottom: 30px;
-		border-bottom: 1px solid #eeeeee;
- 		border-left: 1px solid #eeeeee;
- 		border-right: 1px solid #eeeeee;
-		&:last-child {
-			margin-bottom: 0;
-		}
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 
-		@media (min-width: 768px) and (max-width: 1199px) {
-			width: calc((100% - 4 * 15px) / 2);
-    		margin: 15px;
-		}
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
-		@media screen and (min-width: 1200px) {
-			width: calc((100% - 60px) / 3);
-	 		margin-right: 30px;
-	 		margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-	 		&:nth-child(3n) {
- 			margin-right: 0;
- 		}
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-	 		&:nth-last-child(-n+3) {
- 			margin-bottom: 0;
- 		}
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__card {
@@ -51,8 +52,7 @@
     .portfolio__list &:hover,
     .portfolio__list &:focus {
       box-sizing: border-box;
-      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.161),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.059),
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.161), 0px 4px 4px 0px rgba(0, 0, 0, 0.059),
         0px 1px 1px 0px rgba(0, 0, 0, 0.122);
     }
   }

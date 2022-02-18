@@ -1,69 +1,55 @@
-// .customers {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   @media screen and (min-width:1200px) {
-//     padding-top: 94px;
-//     padding-bottom: 94px;}
-// }
-.customers__title {
-  margin-bottom: 30px;
-  @media screen and (min-width:1200px){
-    margin-bottom: 50px;
+.customers {
+  &__title {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
-}
-.customers__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  @media screen and (min-width:480px){
-   
-   }
-  @media screen and (min-width:1200px) {
-     flex-wrap: nowrap;
-   }
-}
-.customers__item {
-  display: flex;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__item {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  // margin-bottom: 30px;
-  // margin-right: 30px;
-  &:hover {
-    color: var(--basecolor3hover);
+    &:hover {
+      color: var(--basecolor3hover);
     }
     @media screen and (min-width: 768px) {
-       width: calc((100% - 6 * 15px) / 3);
+      width: calc((100% - 6 * 15px) / 3);
     }
-   
-
-}
-.customers__item:last-child {
-  @media screen and (min-width:1200px){
-  margin-right: 0;}
-}
-
-.customers__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid;
-  color: #afb1b8;
-  border-color: #afb1b8;
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border-color: var(--basecolor3hover);
-    color: var(--basecolor3hover);
   }
-}
-
-.customers__icon {
-  fill: currentColor;
+  &__item:last-child {
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    color: #afb1b8;
+    border-color: #afb1b8;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-color: var(--basecolor3hover);
+      color: var(--basecolor3hover);
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
 }
