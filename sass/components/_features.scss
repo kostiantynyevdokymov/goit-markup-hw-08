@@ -1,4 +1,14 @@
 .features {
+  padding-bottom: 0;
+  padding-top: 94px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
   &__title {
     text-transform: uppercase;
     text-align: center;
@@ -11,7 +21,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      margin: -15px;
     }
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
@@ -19,11 +29,10 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-      }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
+
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
