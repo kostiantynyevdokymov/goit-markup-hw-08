@@ -1035,8 +1035,6 @@ body {
 }
 
 .customers__item {
-  display: flex;
-  align-items: center;
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 }
@@ -1052,7 +1050,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .customers__item:last-child {
+  .customers__item {
     margin-right: 0;
   }
 }
@@ -1091,12 +1089,14 @@ body {
   }
 }
 
+.footer__tablet {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__tablet {
     display: flex;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
+    justify-content: space-around;
   }
 }
 
@@ -1108,8 +1108,8 @@ body {
 }
 
 .footer__contact {
-  margin-bottom: 60px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1120,7 +1120,6 @@ body {
 }
 
 .footer__join {
-  margin-bottom: 60px;
   text-align: center;
 }
 
