@@ -29,10 +29,6 @@
   }
 
   &__item {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
@@ -41,6 +37,11 @@
     @media screen and (min-width: 1200px) {
       width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
+    }
+  }
+  &__item:not(last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
   }
   &__item:last-child {
