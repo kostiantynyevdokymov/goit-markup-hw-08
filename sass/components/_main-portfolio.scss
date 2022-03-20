@@ -17,10 +17,13 @@
   }
   &__item:first-child {
     margin-left: 0;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
   &__item:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 15px;
   }
   &__btn {
     padding: 6px 22px;

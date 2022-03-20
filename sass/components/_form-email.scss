@@ -7,24 +7,24 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width:1200px) {
-  display: block;
-  margin: 0;
-  flex-direction: row;
-  justify-content: left;
-  text-align: left;
-  align-items: flex-start;
-  }
-  
-  &__title {
-  font-style: bold;
-  font-size: 14px;
-  line-height: 1, 14;
-  color: var(--basecolor1);
-  margin-bottom: 20px;
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin: 0;
+    flex-direction: row;
+    justify-content: left;
     text-align: left;
+    align-items: flex-start;
   }
+
+  &__title {
+    font-style: bold;
+    font-size: 14px;
+    line-height: 1, 14;
+    color: var(--basecolor1);
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__button {
@@ -41,28 +41,27 @@
   }
 
   &__input {
-  width: 100%;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: #2f303a;
-  color: var(--basecolor1);
-  padding-left: 16px;
-  @media screen and (min-width:1200px) {
-    width: 358px ;
-  }
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: var(--basecolor1);
+    padding-left: 16px;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &__field {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       display: block;
-      flex-direction: row; 
+      flex-direction: row;
       text-align: left;
       align-items: center;
-      padding-left: 93px;
     }
   }
   &__icon {
@@ -71,6 +70,5 @@
   }
   &__inputbox {
     display: block;
-    
   }
 }

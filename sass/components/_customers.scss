@@ -8,21 +8,19 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin: -15px;
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
     }
   }
   &__item {
-    flex-basis: calc(100% / 2 - 15px);
-    margin-top: 15px;
-    margin-left: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
     &:hover {
       color: var(--basecolor3hover);
     }
     @media screen and (min-width: 768px) {
-      flex-basis: calc(100% / 3 - 15px);
+      flex-basis: calc(100% / 3 - 30px);
     }
   }
   &__item {
