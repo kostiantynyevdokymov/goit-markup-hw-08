@@ -18,14 +18,14 @@
   }
 
   &__list {
-    margin: -15px;
+    margin: calc(var(--intend15px) * -1);
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      margin: -15px;
+      margin: calc(var(--intend15px) * -1);
     }
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
@@ -33,15 +33,15 @@
   }
 
   &__item {
-    margin: 15px;
+    margin: var(--intend15px);
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
+      margin: var(--intend15px);
     }
 
     @media screen and (min-width: 1200px) {
       width: calc((100% - 8 * 15px) / 4);
-      margin: 15px;
+      margin: var(--intend15px);
     }
   }
   // &__item:last-child {
@@ -64,7 +64,7 @@
     height: 120px;
     border-radius: 4px;
     background-color: #f5f4fa;
-    margin-bottom: 30px;
+    margin-bottom: var(--intend30px);
   }
   & section {
     margin-bottom: 0;

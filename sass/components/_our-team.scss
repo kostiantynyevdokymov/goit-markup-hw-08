@@ -1,19 +1,19 @@
 .our-team {
   background: #f5f4fa;
   &__list {
-    margin: -15px;
+    margin: calc(var(--intend15px) * -1);
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -30px;
-      margin-left: -30px;
+      margin-top: calc(var(--intend30px) * -1);
+      margin-left: calc(var(--intend30px) * -1);
     }
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
     }
   }
   &__item {
-    margin: 15px;
+    margin: var(--intend15px);
     background: var(--basecolor1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,11 +42,11 @@
     //   }
   }
   &__card {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: var(--intend30px);
+    padding-bottom: var(--intend30px);
   }
   &__name {
-    margin-top: 30px;
+    margin-top: var(--intend30px);
     text-align: center;
     letter-spacing: 0.03em;
   }

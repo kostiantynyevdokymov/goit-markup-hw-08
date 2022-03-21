@@ -1,6 +1,6 @@
 .customers {
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: var(--intend30px);
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
     }
@@ -8,14 +8,14 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin: calc(var(--intend15px) * -1);
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
     }
   }
   &__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin: var(--intend15px);
     &:hover {
       color: var(--basecolor3hover);
     }

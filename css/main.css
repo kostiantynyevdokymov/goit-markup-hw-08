@@ -262,6 +262,8 @@ summary {
   --basecolor1: #ffffff;
   --basecolor2: #212121;
   --basecolor3hover: #2196f3;
+  --intend15px: 15px;
+  --intend30px: 30px;
 }
 
 p,
@@ -801,7 +803,7 @@ body {
 }
 
 .features__list {
-  margin: -15px;
+  margin: calc(var(--intend15px) * -1);
   display: flex;
   flex-direction: column;
 }
@@ -811,7 +813,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: -15px;
+    margin: calc(var(--intend15px) * -1);
   }
 }
 
@@ -822,20 +824,20 @@ body {
 }
 
 .features__item {
-  margin: 15px;
+  margin: var(--intend15px);
 }
 
 @media screen and (min-width: 768px) {
   .features__item {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+    margin: var(--intend15px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
+    margin: var(--intend15px);
   }
 }
 
@@ -846,7 +848,7 @@ body {
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  margin-bottom: var(--intend30px);
 }
 
 .features section {
@@ -868,7 +870,7 @@ body {
 }
 
 .our-work__item + .our-work__item {
-  margin-left: 30px;
+  margin-left: var(--intend30px);
 }
 
 .our-work__item:first-child {
@@ -902,15 +904,15 @@ body {
 }
 
 .our-team__list {
-  margin: -15px;
+  margin: calc(var(--intend15px) * -1);
 }
 
 @media screen and (min-width: 768px) {
   .our-team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: calc(var(--intend30px) * -1);
+    margin-left: calc(var(--intend30px) * -1);
   }
 }
 
@@ -921,19 +923,19 @@ body {
 }
 
 .our-team__item {
-  margin: 15px;
+  margin: var(--intend15px);
   background: var(--basecolor1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .our-team__card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: var(--intend30px);
+  padding-bottom: var(--intend30px);
 }
 
 .our-team__name {
-  margin-top: 30px;
+  margin-top: var(--intend30px);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -985,7 +987,7 @@ body {
 }
 
 .customers__title {
-  margin-bottom: 30px;
+  margin-bottom: var(--intend30px);
 }
 
 @media screen and (min-width: 1200px) {
@@ -997,7 +999,7 @@ body {
 .customers__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  margin: calc(var(--intend15px) * -1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1008,7 +1010,7 @@ body {
 
 .customers__item {
   flex-basis: calc(100% / 2 - 30px);
-  margin: 15px;
+  margin: var(--intend15px);
 }
 
 .customers__item:hover {
@@ -1297,7 +1299,7 @@ body {
 @media screen and (min-width: 768px) {
   .main__list {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: var(--intend30px);
     flex-wrap: nowrap;
   }
 }
@@ -1310,7 +1312,7 @@ body {
 
 .main__item:first-child {
   margin-left: 0;
-  margin-bottom: 15px;
+  margin-bottom: var(--intend15px);
 }
 
 @media screen and (min-width: 768px) {
@@ -1354,28 +1356,28 @@ body {
 .portfolio__list {
   display: flex;
   flex-direction: column;
-  margin-left: -30px;
+  margin-left: calc(var(--intend30px) * -1);
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__list {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: calc(var(--intend15px) * -1);
+    margin-left: calc(var(--intend15px) * -1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio__list {
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: calc(var(--intend30px) * -1);
+    margin-left: calc(var(--intend30px) * -1);
   }
 }
 
 .portfolio__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--intend30px);
+  margin-left: var(--intend30px);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -1384,8 +1386,8 @@ body {
 @media (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
     flex-basis: calc(100% / 2 - 15px);
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: var(--intend15px);
+    margin-left: var(--intend15px);
   }
 }
 

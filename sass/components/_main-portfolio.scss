@@ -8,7 +8,7 @@
 
     @media screen and (min-width: 768px) {
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: var(--intend30px);
       flex-wrap: nowrap;
     }
     @media screen and (min-width: 1200px) {
@@ -17,7 +17,7 @@
   }
   &__item:first-child {
     margin-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: var(--intend15px);
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }

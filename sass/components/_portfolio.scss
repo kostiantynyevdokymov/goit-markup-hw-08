@@ -1,31 +1,31 @@
 .portfolio__list {
   display: flex;
   flex-direction: column;
-  margin-left: -30px;
+  margin-left: calc(var(--intend30px) * -1);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: calc(var(--intend15px) * -1);
+    margin-left: calc(var(--intend15px) * -1);
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: calc(var(--intend30px) * -1);
+    margin-left: calc(var(--intend30px) * -1);
   }
 }
 .portfolio__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--intend30px);
+  margin-left: var(--intend30px);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 
   @media (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 15px);
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: var(--intend15px);
+    margin-left: var(--intend15px);
   }
 
   @media screen and (min-width: 1200px) {
