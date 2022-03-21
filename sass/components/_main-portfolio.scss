@@ -15,12 +15,16 @@
       margin-bottom: 50px;
     }
   }
+
   &__item:first-child {
     margin-left: 0;
-    margin-bottom: var(--intend15px);
+
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
+  }
+  &__item:nth-child(-n + 3) {
+    margin-bottom: var(--intend15px);
   }
   &__item:not(:last-child) {
     margin-right: 8px;
