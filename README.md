@@ -1,1 +1,6 @@
-# kostiantynyevdokymov--goit-markup-hw-07
+#goit-markup-hw-08
+
+
+WEB STUDIO
+
+Выполни вёрстку адаптивной версии всех страниц и элементов макета домашнего задания #8.
